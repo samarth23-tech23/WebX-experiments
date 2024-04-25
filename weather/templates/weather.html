@@ -1,0 +1,13 @@
+<!-- weather.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather for {{ weather_data.city }}</title>
+</head>
+<body>
+    <h1>Weather for {{ weather_data.city }}</h1>
+    <p>Temperature: {{ weather_data.temperature }}°F</p>
+    <p>Description: {{ weather_data.description }}</p>
+    <img src="http://openweathermap.org/img/w/{{ weather_data.icon }}.png" alt="Weather Icon">
+</body>
+</html>

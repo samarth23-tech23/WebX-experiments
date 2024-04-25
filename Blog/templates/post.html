@@ -1,0 +1,13 @@
+<!-- post.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <a href="{{ url_for('edit', post_id=post._id) }}">Edit</a>
+    <a href="{{ url_for('delete', post_id=post._id) }}">Delete</a>
+</body>
+</html>
